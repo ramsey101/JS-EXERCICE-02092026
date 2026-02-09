@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link id="themeStylesheet" rel="stylesheet" href="style.css" />
     <title>E-Commerce page</title>
   </head>
   <body>
@@ -11,11 +11,19 @@
       <div class="container">
         <h1>E-Commerce Store</h1>
         <p>Découvrez notre sélection de produits de qualité</p>
+        <button id="themeToggle" class="theme-toggle">Switch to Dark Mode</button>
       </div>
     </section>
     <section>
       <div class="productSection">
         <h2>Products</h2>
+        <div class="searchSection">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for products..."
+          />
+        </div>
         <div class="product">
           <h3>Product 1</h3>
           <p>Description of Product 1.</p>
@@ -69,6 +77,7 @@
         </div>
       </div>
     </section>
+    <section>
     <div class="addingForm">
       <h2>Add a new product</h2>
       <form id="addProductForm">
@@ -94,7 +103,7 @@
         <button type="submit">Add Product</button>
       </form>
     </div>
-    <section></section>
+    </section>
 
     <script src="script.js"></script>
   </body>

@@ -1,0 +1,268 @@
+/* Dark theme stylesheet */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: #e2e8f0;
+	background-color: #0b1120;
+	min-height: 100vh;
+}
+
+/* Header Section */
+section:first-of-type {
+	text-align: center;
+	padding: 40px 20px;
+	background: linear-gradient(135deg, #0f172a, #1e293b);
+	color: #f8fafc;
+	margin-bottom: 40px;
+}
+
+section:first-of-type h1 {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+
+section:first-of-type p {
+	font-size: 1.2em;
+	opacity: 0.9;
+}
+
+.theme-toggle {
+	margin-top: 25px;
+	background-color: transparent;
+	color: #f8fafc;
+	border: 2px solid #94a3b8;
+	padding: 10px 24px;
+	border-radius: 30px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+	width: auto;
+}
+
+.theme-toggle:hover {
+	background-color: rgba(148, 163, 184, 0.2);
+	border-color: #cbd5f5;
+}
+
+/* Main Container */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+h1, h2 {
+	margin-bottom: 20px;
+}
+
+h2 {
+	text-align: center;
+	color: #f1f5f9;
+	font-size: 2em;
+	margin-bottom: 30px;
+}
+
+/* Products Section */
+section:nth-of-type(2) {
+	padding: 0 20px 60px;
+}
+
+.productSection {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 30px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.productSection h2 {
+	grid-column: 1 / -1;
+	margin-bottom: 0;
+}
+
+/* Search Section */
+.searchSection {
+	grid-column: 1 / -1;
+	margin: 20px 0 30px;
+}
+
+.searchSection input {
+	width: 100%;
+	max-width: 500px;
+	padding: 12px 20px;
+	border: 2px solid #334155;
+	border-radius: 25px;
+	font-size: 16px;
+	background-color: #0f172a;
+	color: #f1f5f9;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+	display: block;
+	margin: 0 auto;
+}
+
+.searchSection input:focus {
+	outline: none;
+	border-color: #38bdf8;
+	box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.searchSection input::placeholder {
+	color: #94a3b8;
+}
+
+.product {
+	background: #1e293b;
+	padding: 25px;
+	border-radius: 12px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.product h3 {
+	color: #f8fafc;
+	margin-bottom: 10px;
+	font-size: 1.4em;
+}
+
+.product p {
+	color: #cbd5f5;
+	margin-bottom: 15px;
+}
+
+.product img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.price {
+	font-weight: bold;
+	color: #38bdf8;
+	font-size: 1.2em;
+	display: block;
+	margin: 10px 0;
+}
+
+/* Product Buttons Container */
+.product-buttons {
+	display: flex;
+	gap: 10px;
+	margin-top: 15px;
+}
+
+button {
+	background-color: #2563eb;
+	color: #f8fafc;
+	border: none;
+	padding: 12px 25px;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	flex: 1;
+}
+
+button:hover {
+	background-color: #1d4ed8;
+	transform: translateY(-2px);
+}
+
+/* Delete Button Specific Styles */
+.delete-btn {
+	background-color: #ef4444;
+}
+
+.delete-btn:hover {
+	background-color: #dc2626;
+}
+
+/* Add to Cart Button Specific Styles */
+.add-to-cart {
+	background-color: #2563eb;
+}
+
+/* Form Section */
+.addingForm {
+	background: #0f172a;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+	max-width: 600px;
+	margin: 60px auto 40px;
+}
+
+.addingForm h2 {
+	color: #38bdf8;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.addingForm label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #e2e8f0;
+}
+
+.addingForm input,
+.addingForm textarea {
+	width: 100%;
+	padding: 12px 15px;
+	margin-bottom: 20px;
+	border: 2px solid #334155;
+	border-radius: 6px;
+	font-size: 16px;
+	transition: border-color 0.3s ease;
+	background-color: #0b1120;
+	color: #f8fafc;
+}
+
+.addingForm input:focus,
+.addingForm textarea:focus {
+	outline: none;
+	border-color: #3b82f6;
+}
+
+.addingForm textarea {
+	height: 80px;
+	resize: vertical;
+	font-family: Arial, sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	section:first-of-type {
+		padding: 30px 15px;
+	}
+    
+	section:first-of-type h1 {
+		font-size: 2em;
+	}
+    
+	.productSection {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		padding: 0 15px;
+	}
+    
+	.addingForm {
+		margin: 40px 15px;
+		padding: 25px;
+	}
+}
