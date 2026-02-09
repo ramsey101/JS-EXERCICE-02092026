@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>E-Commerce page</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>E-Commerce Store</h1>
+        <p>Découvrez notre sélection de produits de qualité</p>
+      </div>
+    </section>
+    <section>
+      <div class="productSection">
+        <h2>Products</h2>
+        <div class="product">
+          <h3>Product 1</h3>
+          <p>Description of Product 1.</p>
+          <div>
+            <div>
+              <img
+                src="https://www.soccerbible.com/media/138945/lucent-sb-1.jpg"
+                alt="Product 1 Image"
+              />
+            </div>
+            <span class="price">$19.99</span>
+          </div>
+          <div class="product-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div>
+        <div class="product">
+          <h3>Product 2</h3>
+          <p>Description of Product 2.</p>
+          <div>
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/I/71rNJdgvB1L._AC_SL1000__.jpg"
+                alt="Product 2 Image"
+              />
+            </div>
+            <span class="price">$29.99</span>
+          </div>
+          <div class="product-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div>
+        <div class="product">
+          <h3>Product 3</h3>
+          <p>Description of Product 3.</p>
+          <div>
+            <div>
+              <img
+                src="https://www.bartuggi.com/images/92-718-423363.topo.jpg"
+                alt="Product 3 Image"
+              />
+            </div>
+            <span class="price">$39.99</span>
+          </div>
+          <div class="product-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="addingForm">
+      <h2>Add a new product</h2>
+      <form id="addProductForm">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" required />
+
+        <label for="productImageUrl">Product Image URL:</label>
+        <textarea
+          id="productImageUrl"
+          name="productImageUrl"
+          required
+        ></textarea>
+
+        <label for="productPrice">Product Price:</label>
+        <input
+          type="number"
+          id="productPrice"
+          name="productPrice"
+          step="0.01"
+          required
+        />
+
+        <button type="submit">Add Product</button>
+      </form>
+    </div>
+    <section></section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
